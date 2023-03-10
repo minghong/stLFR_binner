@@ -1,0 +1,7 @@
+wget 
+
+conda activate binner
+
+pip install networkx
+
+pip install infomap
