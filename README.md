@@ -9,9 +9,9 @@ unzip main.zip
 conda activate binner  #创建新的虚拟环境
 
 pip install networkx #安装依赖
-
+pip install pandas
 pip install infomap
-
+pip install matplotlib
 binner -i contig.fa -1 1.fastq -2 2.fastq -o out_dir -t 10
 
 
