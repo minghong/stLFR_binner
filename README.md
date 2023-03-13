@@ -6,8 +6,11 @@ wget https://github.com/minghong/stLFR_binner/archive/refs/heads/main.zip
 
 unzip main.zip
 
-chmod 755 *
 
+cd stLFR_binner-main
+
+chmod 755 *
+conda create --name binner python=3.6
 conda activate binner  #创建新的虚拟环境
 
 pip install networkx #安装依赖
