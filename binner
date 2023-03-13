@@ -1,3 +1,0 @@
-
-OUT=$(command -v test.py)
-python "${OUT}" "$@" 
