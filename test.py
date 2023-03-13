@@ -4,7 +4,7 @@ def main(contig_name,paired1,paired2,output_name,threads,num):
 
     #os.system('bash pre_data.sh '+contig_name+' '+paired1+' '+paired2+' '+output_name+' '+str(threads))
     
-    os.system('bash run.sh '+contig_name+' '+paired1+' '+paired2+' '+output_name+' '+str(threads)+str(num))
+    os.system('bash run.sh '+contig_name+' '+paired1+' '+paired2+' '+output_name+' '+str(threads)+' '+str(num))
 
 
 
