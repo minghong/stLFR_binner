@@ -1,2 +1,4 @@
 pip install networkx
 pip install infomap
+
+pip install sklearn
