@@ -2,8 +2,8 @@ OUT=$(command -v test.py)
 DIR=$(cd $(dirname $OUT); pwd)
 
 #:<<EOF
-#sed  "s/_/ /" $1 >tmp.fa
-bowtie2-build -f $1  index
+sed  "s/_/ /" $1 >tmp.fa
+bowtie2-build -f tmp.fa index
 
 bowtie2 -p $5 -x  index -1 $2 -2 $3 -S contig.sam 
 
@@ -18,7 +18,7 @@ mkdir input_file
 OUT=$(command -v test.py)
 DIR=$(cd $(dirname $OUT); pwd)
 
-python "${DIR}"/python_code/contig_length.py $1 > input_file/contig_length.txt
+python "${DIR}"/python_code/contig_length.py tmp.fa > input_file/contig_length.txt
 echo "contig_barcode_read"
 time python "${DIR}"/python_code/contig_barcode_read.py    
 
