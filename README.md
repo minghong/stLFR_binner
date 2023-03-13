@@ -10,7 +10,9 @@ unzip main.zip
 cd stLFR_binner-main
 
 chmod 755 *
+
 conda create --name binner python=3.6
+
 conda activate binner  #创建新的虚拟环境
 
 bash rely.sh
