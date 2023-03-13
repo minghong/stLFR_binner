@@ -13,16 +13,7 @@ chmod 755 *
 conda create --name binner python=3.6
 conda activate binner  #创建新的虚拟环境
 
-pip install networkx #安装依赖
-
-pip install pandas
-
-pip install infomap
-
-pip install matplotlib
-
-
-pip install scikit-learn
+bash rely.sh
 
 binner -i contig.fa -1 1.fastq -2 2.fastq -o out_dir -t 10 -k num 
 
