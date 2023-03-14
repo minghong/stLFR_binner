@@ -2,7 +2,8 @@ OUT=$(command -v test.py)
 DIR=$(cd $(dirname $OUT); pwd)
 
 #:<<EOF
-sed  "s/_/ /" $1 >tmp.fa
+#sed  "s/_/ /" $1 >tmp.fa
+cp $1 tmp.fa
 bowtie2-build -f tmp.fa index
 
 bowtie2 -p $5 -x  index -1 $2 -2 $3 -S contig.sam 
