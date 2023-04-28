@@ -17,6 +17,6 @@ conda activate binner  #创建新的虚拟环境
 
 bash rely.sh
 
-binner -i contig.fa -1 1.fastq -2 2.fastq -o out_dir -t 10 -k num 
+binner -i contig.fa -1 1.fastq -2 2.fastq -o out_dir -t 10
 
 
