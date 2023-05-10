@@ -13,6 +13,8 @@ chmod 755 *
 
 conda create --name binner python=3.6
 
+conda install -c bioconda checkm-genome #安装checkm
+
 conda activate binner  #创建新的虚拟环境
 
 bash rely.sh
