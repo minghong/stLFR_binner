@@ -18,5 +18,6 @@ echo $k
 rm -rf $4/*
 python "${DIR}"/python_code/bins.py tmp.fa $4
 
-
+cd  $4
+checkm lineage_wf --pplacer_threads 10 -t 10 -x fa ./ --tab_table -f checkm_2.txt checkout/
 
