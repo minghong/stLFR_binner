@@ -13,7 +13,7 @@ checkm tetra -t $5 input_file/stag1_merge.fa  TDP.txt
 rm -rf checkout
 k=$(tail -1 checkm_2.txt|awk '{print $14}')
 python "${DIR}"/python_code/k_means.py $k >stag2_group.txt
-
+rm checkm_2.txt
 echo $k
 rm -rf $4/*
 python "${DIR}"/python_code/bins.py tmp.fa $4
