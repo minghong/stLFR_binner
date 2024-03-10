@@ -21,4 +21,4 @@ bash rely.sh
 
 binner -i contig.fa -1 1.fastq -2 2.fastq -o out_dir -t 10
 
-
+If you have any question,please contact me: xuqi@seu.edu.cn
