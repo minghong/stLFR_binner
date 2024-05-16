@@ -1,5 +1,5 @@
 # stLFR_binner
-Macrogenomic binning for stLFR (single tube Long Fragment Read) sequencing data
+Macrogenomic binning for stLFR sequencing data
 
 you can use it as fllows:
 
